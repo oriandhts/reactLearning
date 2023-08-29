@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { countAddAction } from './actions/counter'
 import store from './store/store'
-
+import { Provider } from 'react-redux'
 
 
 
@@ -18,7 +18,7 @@ import store from './store/store'
 // console.log(store.getState())
 
 
-store.dispatch(countAddAction)
+// store.dispatch(countAddAction)
 
 
 // store.dispatch({
@@ -42,7 +42,9 @@ store.dispatch(countAddAction)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    < Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
