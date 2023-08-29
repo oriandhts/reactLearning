@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+and i use this template as base to practice how to use redux 
 ## Available Scripts
 
 In the project directory, you can run:
